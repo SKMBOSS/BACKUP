@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="00.MainSystem">
+      <UniqueIdentifier>{1ea4db95-fe87-428e-b224-067c3722773b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Building">
+      <UniqueIdentifier>{67d9ab78-6969-41d4-b245-2133d4b0be1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Floor">
+      <UniqueIdentifier>{b7368792-834f-4895-ba7c-05f6033c56ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Elevator">
+      <UniqueIdentifier>{f211be5c-e4e2-42ca-9f1c-e18204f47762}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Human">
+      <UniqueIdentifier>{f0c9bb13-a93d-4cfe-ac35-196ff5bca7f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Utility">
+      <UniqueIdentifier>{f7809653-57b5-478a-a658-50a2eadb1a7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06.Content">
+      <UniqueIdentifier>{dc8db3ae-8e10-4eea-b9d1-cdfdedf98971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98.Managers">
+      <UniqueIdentifier>{4f8acd2e-8ca7-4332-908c-33104d0de5bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.HumanSpawner">
+      <UniqueIdentifier>{69c512dc-b2aa-4145-a6bd-df1be56cfd48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Floor.cpp">
+      <Filter>02.Floor</Filter>
+    </ClCompile>
+    <ClCompile Include="Building.cpp">
+      <Filter>01.Building</Filter>
+    </ClCompile>
+    <ClCompile Include="MainSystem.cpp">
+      <Filter>00.MainSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Elevator.cpp">
+      <Filter>03.Elevator</Filter>
+    </ClCompile>
+    <ClCompile Include="Human.cpp">
+      <Filter>04.Human</Filter>
+    </ClCompile>
+    <ClCompile Include="LogManager.cpp">
+      <Filter>98.Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleMap.cpp">
+      <Filter>06.Content</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardManager.cpp">
+      <Filter>98.Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="HumanSpawner.cpp">
+      <Filter>05.HumanSpawner</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utility.h">
+      <Filter>99.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Macro.h">
+      <Filter>99.Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Floor.h">
+      <Filter>02.Floor</Filter>
+    </ClInclude>
+    <ClInclude Include="Building.h">
+      <Filter>01.Building</Filter>
+    </ClInclude>
+    <ClInclude Include="MainSystem.h">
+      <Filter>00.MainSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Elevator.h">
+      <Filter>03.Elevator</Filter>
+    </ClInclude>
+    <ClInclude Include="Human.h">
+      <Filter>04.Human</Filter>
+    </ClInclude>
+    <ClInclude Include="Content.h">
+      <Filter>06.Content</Filter>
+    </ClInclude>
+    <ClInclude Include="LogManager.h">
+      <Filter>98.Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleMap.h">
+      <Filter>06.Content</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardManager.h">
+      <Filter>98.Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="HumanSpawner.h">
+      <Filter>05.HumanSpawner</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

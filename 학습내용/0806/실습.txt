@@ -1,0 +1,220 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+#define WIDTH 19
+#define HEIGHT 19
+
+#define BLANK 0
+#define WHITE 1
+#define BLACK 2
+
+#define LEFT 75
+#define RIGHT 77
+#define UP 72
+#define DOWN 80
+#define SPACE 32
+
+void drawBoard(int board[][HEIGHT], int x, int y);
+
+int main()
+{
+
+	int board[HEIGHT][WIDTH];
+	int y= HEIGHT/2, x= WIDTH/2;
+
+	bool white = false;
+	bool black = true;
+
+	char input = 0;
+
+	for (int i = 0; i < HEIGHT; i++)
+	{
+		for (int j = 0; j < WIDTH; j++)
+			board[i][j] = BLANK;
+	}
+
+	
+	for (int i = 0; i < HEIGHT; i++)
+	{
+		for (int j = 0; j < WIDTH; j++)
+		{
+
+			if (i == y && j == x)
+				cout << "¡Ù";
+
+			else if (board[i][j] == BLACK)
+				cout << "¡Û";
+
+			else if (board[i][j] == WHITE)
+				cout << "¡Ü";
+
+			else if (board[i][j] == BLANK)
+			{
+				if (i == 0 && j == 0)
+					cout << "¦£";
+
+				else if (i == HEIGHT - 1 && j == 0)
+					cout << "¦¦";
+
+				else if (i == 0 && j == WIDTH - 1)
+					cout << "¦¤";
+
+				else if (i == HEIGHT - 1 && j == WIDTH - 1)
+					cout << "¦¥";
+
+				else if (i == 0)
+					cout << "¦¨";
+
+				else if (i == HEIGHT - 1)
+					cout << "¦ª";
+
+				else if (j == 0)
+					cout << "¦§";
+
+				else if (j == WIDTH - 1)
+					cout << "¦©";
+
+				else
+					cout << "¦«";
+			}
+		}
+		cout << endl;
+	}
+
+	while (true)
+	{
+		char ch = _getch(); 
+
+		system("cls");
+
+		if (ch == UP)
+			y--;
+		else if (ch == DOWN)
+			y++;
+		else if (ch == LEFT)
+			x--;
+		else if (ch == RIGHT)
+			x++;
+		else if (ch == SPACE)
+		{
+			if (black == true)
+			{
+				board[y][x] = BLACK;
+				black = false;
+				white = true;
+			}
+
+			else if (white == true)
+			{
+				board[y][x] = WHITE;
+				white = false;
+				black = true;
+			}
+			
+		}
+
+		for (int i = 0; i < HEIGHT; i++)
+		{
+			for (int j = 0; j < WIDTH; j++)
+			{
+
+				if (i == y && j == x)
+					cout << "¡Ù";
+
+				else if (board[i][j] == BLACK)
+					cout << "¡Û";
+
+				else if (board[i][j] == WHITE)
+					cout << "¡Ü";
+
+				else if (board[i][j] == BLANK)
+				{
+					if (i == 0 && j == 0)
+						cout << "¦£";
+
+					else if (i == HEIGHT - 1 && j == 0)
+						cout << "¦¦";
+
+					else if (i == 0 && j == WIDTH - 1)
+						cout << "¦¤";
+
+					else if (i == HEIGHT - 1 && j == WIDTH - 1)
+						cout << "¦¥";
+
+					else if (i == 0)
+						cout << "¦¨";
+
+					else if (i == HEIGHT - 1)
+						cout << "¦ª";
+
+					else if (j == 0)
+						cout << "¦§";
+
+					else if (j == WIDTH - 1)
+						cout << "¦©";
+
+					else
+						cout << "¦«";
+				}
+			}
+			cout << endl;
+		}
+
+	}
+
+	
+
+	return 0;
+}
+
+void drawBoard(int board[][HEIGHT], int x, int y)
+{
+	for (int i = 0; i < HEIGHT; i++)
+	{
+		for (int j = 0; j < WIDTH; j++)
+		{
+
+			if (i == y && j == x)
+				cout << "¡Ù";
+
+			else if (board[i][j] == BLACK)
+				cout << "¡Û";
+
+			else if (board[i][j] == WHITE)
+				cout << "¡Ü";
+
+			else if (board[i][j] == BLANK)
+			{
+				if (i == 0 && j == 0)
+					cout << "¦£";
+
+				else if (i == HEIGHT - 1 && j == 0)
+					cout << "¦¦";
+
+				else if (i == 0 && j == WIDTH - 1)
+					cout << "¦¤";
+
+				else if (i == HEIGHT - 1 && j == WIDTH - 1)
+					cout << "¦¥";
+
+				else if (i == 0)
+					cout << "¦¨";
+
+				else if (i == HEIGHT - 1)
+					cout << "¦ª";
+
+				else if (j == 0)
+					cout << "¦§";
+
+				else if (j == WIDTH - 1)
+					cout << "¦©";
+
+				else
+					cout << "¦«";
+			}
+		}
+		cout << endl;
+	}
+}
